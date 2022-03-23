@@ -30,7 +30,7 @@ class SignVerify
     public function verify(string $msg, string $sign, string $address): bool
     {
         if (strlen($sign) !== 132) {
-            throw new \InvalidArgumentException('Invalid signature length.');
+            throw new \InvalidArgumentException('Invalid signature length');
         }
 
         $r = substr($sign, 2, 64);

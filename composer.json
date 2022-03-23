@@ -1,29 +1,35 @@
 {
-    "name": "lexerom/metamask_login",
-    "description": "Support metamask personal_sign verify",
-    "require": {
-        "kornrunner/keccak": "^1.1",
-        "simplito/elliptic-php": "^1.0",
-        "php": "^7.0"
+  "name": "lexerom/metamask_login",
+  "description": "Support metamask personal_sign verify",
+  "require": {
+    "kornrunner/keccak": "^1.1",
+    "simplito/elliptic-php": "^1.0",
+    "phpunit/phpunit": "*",
+    "php": "^7.3 || ^8"
+  },
+  "keywords": [
+    "metamask",
+    "metamask oauth login"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zkoka",
+      "email": "584244756@qq.com"
     },
-    "keywords": [
-        "metamask",
-        "metamask oauth login"
-    ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "zkoka",
-            "email": "584244756@qq.com"
-        },
-        {
-            "name": "Alexey Sukhikh",
-            "email": "lexerom@gmail.com"
-        }
-    ],
-    "autoload": {
-      "psr-4": {
-        "lexerom\\": "src"
-      }
+    {
+      "name": "Alexey Sukhikh",
+      "email": "lexerom@gmail.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "lexerom\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "lexerom\\": ["tests"]
+    }
+  }
 }
